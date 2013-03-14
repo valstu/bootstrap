@@ -712,8 +712,8 @@ pre code {
 }
 
 .row {
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .row:before,
@@ -726,10 +726,15 @@ pre code {
   clear: both;
 }
 
+.row .row {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
 [class^="span"] {
   min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -822,19 +827,19 @@ pre code {
   }
 }
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
   .row {
-    margin-right: -15px;
     margin-left: -15px;
+    margin-right: -15px;
   }
   [class^="span"] {
-    padding-right: 15px;
     padding-left: 15px;
+    padding-right: 15px;
   }
-}
+}*/
 
 [class*="span"].pull-right {
   float: right;

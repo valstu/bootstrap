@@ -635,7 +635,7 @@ input.focused {
     top: 54px;
   }
   .bs-docs-sidenav {
-    width: 170px;
+    width: 100%;
   }
   .bs-docs-sidenav.affix-bottom {
     position: absolute;
@@ -647,13 +647,13 @@ input.focused {
 /* Tablets/desktops and up */
 @media screen and (min-width: 992px) {
   .bs-docs-sidenav {
-    width: 220px;
+    /*width: 220px;*/
   }
 }
 
 /* Large desktops and up */
 @media screen and (min-width: 1200px) {
   .bs-docs-sidenav {
-    width: 260px;
+    /*width: 260px;*/
   }
 }

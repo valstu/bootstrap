@@ -452,12 +452,21 @@
 // }
 
 .make-row() {
-
+  margin-left:  0;
+  margin-right: 0;
+  .clear_float();
+}
+.make-row-collapse() {
+  margin-left:  @grid-gutter-width / -1;
+  margin-right: @grid-gutter-width / -1;
+  .clear_float();
 }
 .make-column(@columns) {
   float: left;
-  padding: @grid-gutter-width;
+  padding-left: @grid-gutter-width;
+  padding-right: @grid-gutter-width;
   width: percentage(@columns / @grid-columns);
+  .box-sizing(border-box);
 }
 .make-column-offset(@columns) {
   margin-left: percentage(@columns / @grid-columns);
